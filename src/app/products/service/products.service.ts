@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductsService {
 
-  uri = 'http://localhost:4000/products';
+  // uri = 'http://localhost:4000/products';
+  uri = 'http://gusttm-com.umbler.net/products';
 
   constructor(private http: HttpClient) { }
 
