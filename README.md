@@ -1,1 +1,3 @@
-Controle_de_estoque_MQtech
+Front do projeto
+
+- Para iniciar, rode o comando ng serve dentro da pasta do projeto.
