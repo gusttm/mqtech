@@ -25,7 +25,6 @@ export class ProductAddComponent implements OnInit {
 
   addProduct(ProductCode, ProductName, ProductQnt, ProductUnit) {
     this.ps.addProduct(parseInt(ProductCode), ProductName, parseInt(ProductQnt), ProductUnit);
-    this.router.navigate(['products']);
   }
 
   ngOnInit() {

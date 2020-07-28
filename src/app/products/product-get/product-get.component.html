@@ -1,11 +1,11 @@
 <div class="title">
-    <h2>🧾 Lista de produtos</h2>
+    <h2>📃 Lista de produtos</h2>
 </div>
 <table class="table table-hover mt-4">
   <thead>
   <tr>
       <td><p><b>Cód.</b></p></td>
-      <td><p>Nome produto</p></td>
+      <td><p>Nome</p></td>
       <td><p>Unid.</p></td>
       <td><p>Qntd.</p></td>
       <td colspan="2"><p>Ações</p></td>
@@ -17,8 +17,8 @@
           <td><p>{{ product.ProductName }}</p></td>
           <td><p>{{ product.ProductUnit }}</p></td>
           <td><p>{{ product.ProductQnt }}</p></td>
-          <td class="pb-0"><a [routerLink]="['/edit', product._id]" class="btn btn-primary mr-2">Editar</a>
-          <a (click)="deleteProduct(product._id)" class="btn btn-outline-danger text-danger"> 🗑 </a></td>
+          <td class="pb-0"><a [routerLink]="['/edit', product._id]" class="btn btn-primary mr-2 mb-1">Editar</a>
+          <a (click)="deleteProduct(product._id)" class="btn btn-outline-danger text-danger mb-1"> 🗑 </a></td>
       </tr>
   </tbody>
 </table>
