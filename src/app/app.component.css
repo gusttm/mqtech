@@ -4,8 +4,9 @@ nav {
 }
 .logo {
     background: url('../logo.png') center center no-repeat;
-    width: 7rem;
-    height: auto;
+    background-size: cover;
+    width: 6rem;
+    height: 2.2rem;
 }
 .nav-link {
     color: #555;
