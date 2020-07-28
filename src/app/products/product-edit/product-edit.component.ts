@@ -34,7 +34,7 @@ export class ProductEditComponent implements OnInit {
     });
   }
 
-  updateProduct(ProductCode, ProductName, ProductQnt, ProductUnit, id) {
+  updateProduct(ProductCode, ProductName, ProductQnt, ProductUnit) {
     this.route.params.subscribe(params => {
       this.ps.updateProduct(ProductCode, ProductName, parseInt(ProductQnt), ProductUnit, params.id);
       this.router.navigate(['products']);
