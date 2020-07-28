@@ -1,13 +1,16 @@
 {
   "name": "estoquemq",
   "version": "0.0.0",
+  "homepage": "https://gusttm.github.io/mqtech/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "ng build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
