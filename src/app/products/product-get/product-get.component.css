@@ -1,0 +1,22 @@
+p {
+    padding-top: .6rem;
+}
+
+thead {
+    background: rgb(250, 250, 250);
+}
+thead tr {
+    border: none;
+}
+tr.products-list:hover {
+    background: rgb(250, 250, 250);
+}
+td {
+    padding: .6rem !important;
+}
+.btn {
+    width: 4rem;
+}
+.btn:hover {
+    cursor: pointer;
+}

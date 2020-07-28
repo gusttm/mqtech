@@ -1,0 +1,22 @@
+<ng2-slim-loading-bar color="red"></ng2-slim-loading-bar>
+<nav class="navbar navbar-expand-sm pb-1 pt-2 mb-4">
+  <div class="container-fluid d-flex justify-content-start">
+    <div class="col-xs-2">
+      <a routerLink="/" class="nav-link" routerLinkActive="active">
+        <img src="../assets/mqtech-logo.png" alt="MQtech estoque">
+      </a>
+    </div>
+    <div class="nav-items col-xs-10 d-flex">
+      <a routerLink="/products" class="nav-link" routerLinkActive="active">
+        Produtos
+      </a>
+      <a routerLink="product/create" class="nav-link" routerLinkActive="active">
+        Adicionar
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
