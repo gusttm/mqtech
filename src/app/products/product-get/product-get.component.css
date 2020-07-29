@@ -14,7 +14,7 @@ tr.products-list:hover {
 td {
     padding: .6rem !important;
 }
-.btn {
+.btn-table {
     width: 4rem;
 }
 .btn:hover {

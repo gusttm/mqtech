@@ -17,11 +17,20 @@
           <td><p>{{ product.ProductName }}</p></td>
           <td><p>{{ product.ProductUnit }}</p></td>
           <td><p>{{ product.ProductQnt }}</p></td>
-          <td class="pb-0"><a [routerLink]="['/edit', product._id]" class="btn btn-primary mr-2 mb-1">Editar</a>
-          <a (click)="deleteProduct(product._id)" class="btn btn-outline-danger text-danger mb-1"> 🗑 </a></td>
+          <td class="pb-0"><a [routerLink]="['/edit', product._id]" class="btn btn-table btn-primary mr-2 mb-1">Editar</a>
+          <a (click)="deleteProduct(product._id)" class="btn btn-table btn-outline-danger text-danger mb-1"> 🗑 </a></td>
       </tr>
   </tbody>
 </table>
+<div class="alert alert-warning" *ngIf="products && products.length === 0" role="alert">
+    <p>Você ainda não possui produtos.</p>
+    <a [routerLink]="['/product/create']" class="btn btn-primary mr-2 mb-1">Adicionar</a>
+</div>
+<div class="alert alert-warning" *ngIf="err" role="alert">
+    <p>Não foi possível comunicar com a API.</p>
+    <a (click)="getProducts()" class="btn btn-primary mr-2 mb-1">Recarregar</a>
+</div>
 <div class="page-wrapper container d-flex justify-content-end">
     <pagination-controls (pageChange)="paginaAtual = $event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
 </div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-triangle-path"><p style="color: #fff" >Carregando... </p></ngx-spinner>
